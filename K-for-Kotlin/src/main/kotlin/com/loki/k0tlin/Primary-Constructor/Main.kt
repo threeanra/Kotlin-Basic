@@ -6,6 +6,7 @@ class Animal(name: String, weight: Double, age: Int, isMammal: Boolean) {
     val age: Int
     val isMammal: Boolean
 
+    //init for validation value only
     init {
         this.weight = if(weight < 0) 0.1 else weight
         this.age = if(age < 0) 0  else age
